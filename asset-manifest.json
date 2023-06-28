@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Streamberry/static/css/main.41d74bff.css",
+    "main.js": "/Streamberry/static/js/main.49f489aa.js",
+    "static/js/787.5ce43818.chunk.js": "/Streamberry/static/js/787.5ce43818.chunk.js",
+    "index.html": "/Streamberry/index.html",
+    "main.41d74bff.css.map": "/Streamberry/static/css/main.41d74bff.css.map",
+    "main.49f489aa.js.map": "/Streamberry/static/js/main.49f489aa.js.map",
+    "787.5ce43818.chunk.js.map": "/Streamberry/static/js/787.5ce43818.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41d74bff.css",
+    "static/js/main.49f489aa.js"
+  ]
+}
