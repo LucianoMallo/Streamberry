@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { useMovies } from './hooks/useMovies'
+import { Movies } from './components/Movies'
+import { useSearch } from './hooks/useSearch'
 
-function App() {
+function App () {
+  const { movies } = useMovies()
+  const { search, updateSearch, error } = useSearch()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    console.log({ search })
+  }
+  const handleChange = (event) => {
+    updateSearch(event.target.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='page'>
+      <header className='header'>
+        <h1 className='title'>Streamberry</h1>
+        <form className='form' onSubmit={handleSubmit}>
+          <input
+            style={{
+              border: '1px solid transparent',
+              borderColor: error ? 'red' : 'transparent'
+            }} onChange={handleChange} value={search} name='search' type='text' placeholder='Avenger, Star Wars, the...'
+          />
+          <button type='submit'>Search</button>
+
+        </form>
+        {error && <p style={{ color: 'red' }} className='error'>{error}</p>}
       </header>
+
+      <main className='main'>
+        <Movies movies={movies} />
+      </main>
+
     </div>
-  );
+
+  )
 }
 
-export default App;
+export default App
