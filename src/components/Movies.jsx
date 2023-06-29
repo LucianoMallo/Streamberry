@@ -1,3 +1,5 @@
+import placeholderImage from '../assets/placeholder.png'
+
 function ListOfMovies ({ movies }) {
   return (
     <ul className='movies'>
@@ -6,7 +8,8 @@ function ListOfMovies ({ movies }) {
             <li className='movie' key={movie.id}>
               <h3>{movie.title}</h3>
               <p>Year: {movie.year}</p>
-              <img src={movie.poster} alt={movie.title} />
+              {console.log(movie.poster)}
+              <img src={movie.poster !== 'N/A' ? movie.poster : placeholderImage} alt={movie.title} />
             </li>)
         }
     </ul>
