@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/Streamberry/static/css/main.b386f6f7.css",
-    "main.js": "/Streamberry/static/js/main.23ca70d1.js",
-    "static/js/787.5ce43818.chunk.js": "/Streamberry/static/js/787.5ce43818.chunk.js",
+    "main.js": "/Streamberry/static/js/main.551bd38d.js",
     "static/media/Bebas-Regular.ttf": "/Streamberry/static/media/Bebas-Regular.90dabffdfc7cafc45f81.ttf",
     "index.html": "/Streamberry/index.html",
     "main.b386f6f7.css.map": "/Streamberry/static/css/main.b386f6f7.css.map",
-    "main.23ca70d1.js.map": "/Streamberry/static/js/main.23ca70d1.js.map",
-    "787.5ce43818.chunk.js.map": "/Streamberry/static/js/787.5ce43818.chunk.js.map"
+    "main.551bd38d.js.map": "/Streamberry/static/js/main.551bd38d.js.map"
   },
   "entrypoints": [
     "static/css/main.b386f6f7.css",
-    "static/js/main.23ca70d1.js"
+    "static/js/main.551bd38d.js"
   ]
 }
